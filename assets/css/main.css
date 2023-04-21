@@ -2439,6 +2439,7 @@ input, select, textarea {
 
 /* Button */
 
+
 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
@@ -2572,7 +2573,7 @@ input, select, textarea {
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		postiion: relative;
+		position: relative;
 		margin: -2.5em 0 0 -2.5em;
 	}
 
@@ -2582,8 +2583,11 @@ input, select, textarea {
 			-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
 			transition: transform 0.5s ease, opacity 0.5s ease;
 			position: relative;
-			width: calc(33.33333% - 2.5em);
-			margin: 2.5em 0 0 2.5em;
+			width: calc(25.33333% - 2.5em);
+			margin: -1em;
+			margin-top: 0.1em;
+			margin-left: 2.7em;
+			margin-bottom: 3em;
 		}
 
 			.tiles article > .image {
@@ -2829,7 +2833,7 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		padding: 8em 0 0.1em 0 ;
+		padding: 1em 0 0.1em 0 ;
 	}
 
 		#header .logo {
@@ -2862,7 +2866,7 @@ input, select, textarea {
 		#header nav {
 			position: fixed;
 			right: 2em;
-			top: 2em;
+			top: 0.5em;
 			z-index: 10000;
 		}
 
@@ -3152,6 +3156,7 @@ input, select, textarea {
 
 	#main {
 		padding: 0em 0 6em 0 ;
+		margin-top: -1em;
 	}
 
 		@media screen and (max-width: 736px) {
@@ -3165,8 +3170,11 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		padding: 5em 0 6em 0 ;
+		padding : 2em 0 6em 0;
 		background-color: #f6f6f6;
+		height: 380px;
+		width: 70em;
+		text-align: center;
 	}
 
 		#footer > .inner {
@@ -3186,16 +3194,19 @@ input, select, textarea {
 
 			#footer > .inner > * > :last-child {
 				margin-bottom: 0;
+				margin-left: 2.5em;
+
+				
 			}
 
 			#footer > .inner section:nth-child(1) {
 				width: calc(66% - 2.5em);
-				margin-right: 2.5em;
+				margin-right: 0.5em;
 			}
 
 			#footer > .inner section:nth-child(2) {
 				width: calc(33% - 2.5em);
-				margin-left: 2.5em;
+				margin-left: 1.5em;
 			}
 
 			#footer > .inner .copyright {
@@ -3205,6 +3216,7 @@ input, select, textarea {
 				list-style: none;
 				font-size: 0.8em;
 				color: rgba(88, 88, 88, 0.5);
+				margin-left: -32em;
 			}
 
 				#footer > .inner .copyright a {
